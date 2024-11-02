@@ -9,10 +9,10 @@ class CreateAuthorsTable extends Migration
     public function up()
     {
         Schema::create('authors', function (Blueprint $table) {
-            $table->id();  // Primary key 'id'
-            $table->string('name');  // Nama penulis
-            $table->string('email')->unique();  // Email unik
-            $table->timestamps();  // Kolom created_at dan updated_at
+            $table->id(); 
+            $table->string('name'); 
+            $table->string('email')->unique(); 
+            $table->timestamps();  
         });
     }
 
